@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var values = [1,12,4,7,8,3,5,11,9,10];
+        var len = values.length;
+
+        var smallest = values[0];
+
+        for(let i = 1; i < len; i++){
+            if(values[i]<smallest){
+                smallest = values[i];
+            }
+            else{
+                continue;
+            }
+        }
+
+        con(smallest);
+    </script>
+</body>
+</html>

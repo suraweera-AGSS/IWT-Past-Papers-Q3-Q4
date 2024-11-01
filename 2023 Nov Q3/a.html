@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        #change {
+            color: green;
+            background-color: yellow;
+            font-size: 28px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function calculate()
+        {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var opt = document.getElementById("opt").value;
+            var result = 0;
+
+            if(opt == "+")
+            {
+                result = parseInt(num1) + parseInt(num2);
+            }
+            else if(opt == "-")
+            {
+                result = parseInt(num1) - parseInt(num2);
+            }
+            else if(opt == "*")
+            {
+                result = parseInt(num1) * parseInt(num2);
+            }
+            else if(opt == "/")
+            {
+                result = parseInt(num1) / parseInt(num2);
+            }
+            else
+            {
+                alert("Invalid Operator");
+            }
+
+            var ans = document.getElementById("answer").innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+    <form style="width: 25%;" method="post">
+        <fieldset>
+            <legend><b>Simple Calculator</b></legend>
+            <br>
+
+                <label for="num1"><b>Number 1:</b></label>
+                <input type="text" id="num1" name="Number 1">
+                <br><br>
+
+                <label for="num2"><b>Number 2:</b></label>
+                <input type="text" id="num2" name="Number 2">
+                <br><br>
+
+                <label for="operator"><b>Operator:</b></label>
+                <input type="text" id="opt" name="Operator">
+                <br><br>
+
+        </fieldset>
+        <br>
+        <button id="change" type="button" onclick="calculate()">calculate</button>
+        <br>
+    </form>
+
+    <p id="answer"></p>
+</body>
+
+</html>

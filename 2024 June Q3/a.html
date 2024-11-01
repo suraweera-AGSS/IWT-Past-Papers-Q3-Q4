@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function matchPattern()
+        {
+            var p1 = document.getElementById("p1").value;
+            var p2 = document.getElementById("p2").value;
+
+            if(p1 === p2)
+            {
+                document.write("Both patterns are same");
+            }
+            else
+            {
+                alert("Patterns are different");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form style="width: 50%;">
+        <fieldset>
+            <legend><b>Pattern Checker</b></legend>
+            <label for="field1">Pattern 1: </label>
+            <br>
+            <input type="text" id="p1" name="Pattern 1" style="background-color: pink;">
+            <br><br>
+            <label for ="field2">Pattern 2: </label>
+            <br>
+            <input type="text" id="p2" name="Pattern 2" style="background-color: yellow;">
+            <br><br>
+        </fieldset>
+        <br>
+        <input type="button" id="btn" value="Check" onclick="matchPattern()">
+    </form>
+</body>
+</html>

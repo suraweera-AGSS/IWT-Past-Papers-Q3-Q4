@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <form method="post" action="vehicleRegistration.php">
+        <h2>Vehicle Reservation</h2>
+        <fieldset style="width: fit-content";>
+            <legend>Customer Information</legend>
+            Customer Name: * <br>
+            <input type="text" id="cusName" name="CustomerName" required>
+            <br><br>
+
+            Phone Number:*<br>
+            <input type="tel" id="pNo" name="PhoneNumber" required>
+            <br><br>
+
+            Email: <br>
+            <input type="email" id="email" name="Email">
+            <br><br>
+
+            Pic Up Address: <br>
+            <textarea cols="20" rows="5" name="pickupAdd" id="address"></textarea>
+            <br><br>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset style="width: fit-content;">
+            <Legend>Vehicle Information </Legend>
+            <label for="Vtype">Vehicle Type:</label><br>
+            <select id="Vtype" name="VehicleType">
+                <option value="Car">Car</option>
+                <option value="Van">Van</option>
+                <option value="Bus">Bus</option>
+            </select>
+            <br><br>
+            <label for="airCondition">Air Condition</label><br>
+            <input type="radio" id="airCondition"> With AC
+            <input type="radio" id="airCondition"> Without AC
+            <br><br>
+        </fieldset>
+
+        <br><br>
+
+
+
+
+
+<!-- new fieldset -->
+        <fieldset>
+            <legend>User Account Details</legend>
+            
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username"><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">Accept privacy policy and terms.</label><br><br>
+            
+            <center><button type="submit">Submit</button></center>
+        </fieldset>
+
+<!-- ====== -->
+
+
+
+
+
+        <fieldset style="width: fit-content;">
+            <legend>Trip Duration</legend>
+            Start Date:<input type="date" name="StartDate" id="startDate"><br><br>
+            End Date:<input type="date" name="EndDate" id="endDate">
+            <br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

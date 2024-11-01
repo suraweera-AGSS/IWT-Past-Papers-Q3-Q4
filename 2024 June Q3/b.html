@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks = [10,55,44,78,90,65,30,80];
+        var len = marks.length;
+
+        var tot = 0;
+        var avg = 0;
+
+        for(var i = 0; i<len; i++)
+        {
+            tot = tot + marks[i];
+        }
+
+        avg = tot/len;
+
+        document.write("Total Marks: " + tot + "<br>");
+        document.write("Average Marks: " + avg + "<br>");
+    </script>
+</body>
+</html>

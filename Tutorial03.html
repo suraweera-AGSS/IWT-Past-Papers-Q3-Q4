@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <script>
+        function matchPassword() {
+            // Get the values of the password fields
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+            // Check if passwords match
+            if (password === confirmPassword) {
+                alert("Passwords match!");
+            } else {
+                alert("Passwords do not match.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); matchPassword();">
+        <fieldset>
+            <legend>Password Checker</legend>
+
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password" name="password">
+            <br><br>
+
+            <label for="confirm-password">Re-enter Password:</label>
+            <br>
+            <input type="password" id="confirm-password" name="confirm-password">
+            <br><br>
+        </fieldset>
+        <br>
+        <button type="submit" style="background-color: yellow; color: red;">Submit</button>
+    </form>
+</body>
+</html>
